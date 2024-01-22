@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  overflow-x: hidden;
+}
+
+#home {
+  background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url(../img/events-heavenly-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.homeNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.8s;
+  padding-top: 60px;
+}
+
+.homeNav span {
+  top: 25px;
+  right: 25px;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.homeNav a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.homeNav a:hover {
+  color: tomato;
+}
+
+.homeContent {
+  height: 90vh;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.homeContent h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.homeContent p {
+  margin-top: 0.5rem;
+}
+
+.homeContent span {
+  padding-left: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: margin-left 0.8s;
+}
+
+
+
+
+/*                         duration                            */
+
+
+
+#duration {
+  margin: 100px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.durationHead {
+  padding: 10px;
+  background-color: rgba(214, 46, 51, 0.6) !important;
+  cursor: pointer;
+  color: white;
+  margin: 0;
+}
+
+.durationContent {
+  padding: 10px;
+  background-color: #ccc !important;
+  display: none;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/*                  details                 */
+
+
+
+
+
+#details {
+  background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+    url(../img/invitation-2508607__340.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 100px 0;
+}
+
+.container {
+  padding: 50px 0px;
+}
+
+.data {
+  padding: 20px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+
+
+/*                  details                 */
+
+
+
+.title h2 {
+  color: #444;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.title p {
+  text-align: center;
+  color: #777;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.contactInfo h3 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #444;
+  padding-top: 10px;
+}
+
+.contactInfo p {
+  text-align: center;
+  color: #777;
+  padding-bottom: 35px;
+}
+
+.contactInfo .info {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contactInfo .info span,
+.contactInfo .info i {
+  color: #777;
+  text-align: center;
+}
+
+.contactInfo .info span {
+  margin-left: 20px;
+}
+
+.contactInfo .info .diff-color {
+  color: #d62e33;
+}
+
+.contactInfo .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo .icons i {
+  width: 30px;
+  height: 30px;
+  color: #777;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo .icons i:hover {
+  background-color: #d62e33;
+  color: #fff;
+  border-color: #d62e33;
+}
+
+form input,
+form textarea {
+  color: #6c6c6c;
+}
+
+form .form-control {
+  border-radius: 0;
+}
+
+form .form-control:focus {
+  border-color: #d62e33;
+  box-shadow: 0 0px 1px 0.25rem #d62e3478;
+}
+
+form p span {
+  color: #d62e33;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form button {
+  background-color: #d62e33;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*            media                */
+
+@media screen and (max-width: 768px) {
+  .homeContent {
+    padding: 1em;
+  }
+  .homeNav a {
+    padding: 20px;
+  }
+  #duration {
+    width: 90%;
+  }
+  .durationContent {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  section {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeNav a {
+    font-size: 18px;
+  }
+  .homeContent h2 {
+    font-size: 2rem;
+  }
+  .durationContent {
+    padding: 5px;
+  }
+  .data {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  form button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .title h2{
+    text-align: center;
+  }
+  #home {
+   background-size:100% 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+  }
+  #details{
+    background-size:100% 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+  }
+  section {
+    display: block;
+  }
+}
